@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63233AF5-FF97-4E93-8B6E-FB48BB35517A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PROJECT_UAS</RootNamespace>
+    <AssemblyName>PROJECT_UAS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.DataAccess, Version=2.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="Oracle.Web, Version=2.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FORM_BARANG_PENAMAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_BARANG_PENAMAS.designer.cs">
+      <DependentUpon>FORM_BARANG_PENAMAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_LOGIN_PENAMAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_LOGIN_PENAMAS.designer.cs">
+      <DependentUpon>FORM_LOGIN_PENAMAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_LOGIN_PERUSAHAAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_LOGIN_PERUSAHAAN.Designer.cs">
+      <DependentUpon>FORM_LOGIN_PERUSAHAAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_MENU_UTAMA_PENAMAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_MENU_UTAMA_PENAMAS.Designer.cs">
+      <DependentUpon>FORM_MENU_UTAMA_PENAMAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_PELANGGAN_PENAMAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_PELANGGAN_PENAMAS.Designer.cs">
+      <DependentUpon>FORM_PELANGGAN_PENAMAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_PENERIMAAN_PENAMAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_PENERIMAAN_PENAMAS.Designer.cs">
+      <DependentUpon>FORM_PENERIMAAN_PENAMAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_PENJUALAN_PENAMAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_PENJUALAN_PENAMAS.Designer.cs">
+      <DependentUpon>FORM_PENJUALAN_PENAMAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_SALES_PENAMAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_SALES_PENAMAS.Designer.cs">
+      <DependentUpon>FORM_SALES_PENAMAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_KARYAWAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_KARYAWAN.Designer.cs">
+      <DependentUpon>FRM_KARYAWAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_BANTUAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_BANTUAN.Designer.cs">
+      <DependentUpon>FRM_BANTUAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_CETAK_FAKTUR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_CETAK_FAKTUR.Designer.cs">
+      <DependentUpon>FRM_CETAK_FAKTUR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_LAPORAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_LAPORAN.Designer.cs">
+      <DependentUpon>FRM_LAPORAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_MENU_UTAMA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_MENU_UTAMA.Designer.cs">
+      <DependentUpon>FRM_MENU_UTAMA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PENERIMAAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PENERIMAAN.designer.cs">
+      <DependentUpon>FRM_PENERIMAAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PENJUALAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PENJUALAN.Designer.cs">
+      <DependentUpon>FRM_PENJUALAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_BARANG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_BARANG.Designer.cs">
+      <DependentUpon>FRM_BARANG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PELANGGAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PELANGGAN.Designer.cs">
+      <DependentUpon>FRM_PELANGGAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_LOGIN.Designer.cs">
+      <DependentUpon>FRM_LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_UBAH_PASSWORD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_UBAH_PASSWORD.Designer.cs">
+      <DependentUpon>FRM_UBAH_PASSWORD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FORM_BARANG_PENAMAS.resx">
+      <DependentUpon>FORM_BARANG_PENAMAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_LOGIN_PENAMAS.resx">
+      <DependentUpon>FORM_LOGIN_PENAMAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_LOGIN_PERUSAHAAN.resx">
+      <DependentUpon>FORM_LOGIN_PERUSAHAAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_MENU_UTAMA_PENAMAS.resx">
+      <DependentUpon>FORM_MENU_UTAMA_PENAMAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_PELANGGAN_PENAMAS.resx">
+      <DependentUpon>FORM_PELANGGAN_PENAMAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_PENERIMAAN_PENAMAS.resx">
+      <DependentUpon>FORM_PENERIMAAN_PENAMAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_PENJUALAN_PENAMAS.resx">
+      <DependentUpon>FORM_PENJUALAN_PENAMAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_SALES_PENAMAS.resx">
+      <DependentUpon>FORM_SALES_PENAMAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_BANTUAN.resx">
+      <DependentUpon>FRM_BANTUAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_CETAK_FAKTUR.resx">
+      <DependentUpon>FRM_CETAK_FAKTUR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_KARYAWAN.resx">
+      <DependentUpon>FRM_KARYAWAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_MENU_UTAMA.resx">
+      <DependentUpon>FRM_MENU_UTAMA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PENERIMAAN.resx">
+      <DependentUpon>FRM_PENERIMAAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PENJUALAN.resx">
+      <DependentUpon>FRM_PENJUALAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_BARANG.resx">
+      <DependentUpon>FRM_BARANG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PELANGGAN.resx">
+      <DependentUpon>FRM_PELANGGAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_LOGIN.resx">
+      <DependentUpon>FRM_LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_UBAH_PASSWORD.resx">
+      <DependentUpon>FRM_UBAH_PASSWORD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ORAOLEDBLib">
+      <Guid>{0BB9AFD1-51A1-11D2-BB7D-00C04FA30080}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
